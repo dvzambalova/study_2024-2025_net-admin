@@ -1,0 +1,419 @@
+<h1 id="информация">Информация</h1>
+<h2 id="докладчик">Докладчик</h2>
+<div class="columns" data-align="center">
+<div class="column" style="width:70%;">
+<ul>
+<li>Замбалова Дина Владимировна</li>
+<li>студентка</li>
+<li>Российский университет дружбы народов</li>
+<li><a href="mailto:1032216453@pfur.ru">1132226536@pfur.ru</a></li>
+<li><a href="https://github.com/dvzambalova"
+class="uri">https://github.com/dvzambalova</a></li>
+</ul>
+</div><div class="column" style="width:25%;">
+
+</div>
+</div>
+<h2 id="цель-работы">Цель работы</h2>
+<p>Познакомиться с принципами планирования локальной сети
+организации.</p>
+<h2 id="задание">Задание</h2>
+<ol type="1">
+<li><p>Используя графический редактор (например, Dia), требуется
+повторить схемы L1, L2, L3, а также сопутствующие им таблицы VLAN,
+IP-адресов и портов подключения оборудования планируемой сети.</p></li>
+<li><p>Рассмотренный выше пример планирования адресного пространства
+сети базируется на разбиении сети 10.128.0.0/16 на соответствующие
+подсети. Требуется сделать аналогичный план адресного пространства для
+сетей 172.16.0.0/12 и 192.168.0.0/16 с соответствующими схемами сети и
+сопутствующими таблицами VLAN, IP-адресов и портов подключения
+оборудования.</p></li>
+<li><p>При выполнении работы необходимо учитывать соглашение об
+именовании</p></li>
+</ol>
+<h2 id="выполнение-лабораторной-работы">Выполнение лабораторной
+работы</h2>
+<figure id="fig:001">
+<img src="image/" style="width:70.0%"
+alt="Физические устройства сети с номерами портов (Layer 1)" />
+<figcaption aria-hidden="true">Физические устройства сети с номерами
+портов (Layer 1)</figcaption>
+</figure>
+<h2 id="выполнение-лабораторной-работы-1">Выполнение лабораторной
+работы</h2>
+<table>
+<caption>Таблица VLAN</caption>
+<thead>
+<tr>
+<th>№ VLAN</th>
+<th>Имя VLAN</th>
+<th>Примечание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>default</td>
+<td>Не используется</td>
+</tr>
+<tr>
+<td>2</td>
+<td>management</td>
+<td>Для управления устройствами</td>
+</tr>
+<tr>
+<td>3</td>
+<td>servers</td>
+<td>Для серверной фермы</td>
+</tr>
+<tr>
+<td>4-100</td>
+<td></td>
+<td>Зарезервировано</td>
+</tr>
+<tr>
+<td>101</td>
+<td>dk</td>
+<td>Дисплейные классы (ДК)</td>
+</tr>
+<tr>
+<td>102</td>
+<td>departamens</td>
+<td>Кафедры</td>
+</tr>
+<tr>
+<td>103</td>
+<td>adm</td>
+<td>Администрация</td>
+</tr>
+<tr>
+<td>104</td>
+<td>other</td>
+<td>Для других пользователей</td>
+</tr>
+</tbody>
+</table>
+<h2 id="выполнение-лабораторной-работы-2">Выполнение лабораторной
+работы</h2>
+<figure id="fig:002">
+<img src="image/" style="width:70.0%" alt="Схема VLAN сети (Layer 2)" />
+<figcaption aria-hidden="true">Схема VLAN сети (Layer 2)</figcaption>
+</figure>
+<h2 id="выполнение-лабораторной-работы-3">Выполнение лабораторной
+работы</h2>
+<figure id="fig:003">
+<img src="image/" style="width:70.0%"
+alt="Схема маршрутизации сети (Layer 3)" />
+<figcaption aria-hidden="true">Схема маршрутизации сети (Layer
+3)</figcaption>
+</figure>
+<h2 id="выполнение-лабораторной-работы-4">Выполнение лабораторной
+работы</h2>
+<table>
+<caption>Таблица IP. Сеть 10.128.0.0/16</caption>
+<thead>
+<tr>
+<th>IP-адреса</th>
+<th>Примечание</th>
+<th>VLAN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10.128.0.0/16</td>
+<td>Вся сеть</td>
+<td></td>
+</tr>
+<tr>
+<td>10.128.0.0/24</td>
+<td>Серверная ферма</td>
+<td>3</td>
+</tr>
+<tr>
+<td>10.128.0.1</td>
+<td>Шлюз</td>
+<td></td>
+</tr>
+<tr>
+<td>10.128.0.2</td>
+<td>Web</td>
+<td></td>
+</tr>
+<tr>
+<td>10.128.0.3</td>
+<td>File</td>
+<td></td>
+</tr>
+<tr>
+<td>10.128.0.4</td>
+<td>Mail</td>
+<td></td>
+</tr>
+<tr>
+<td>10.128.0.5</td>
+<td>Dns</td>
+<td></td>
+</tr>
+<tr>
+<td>10.128.0.6-10.128.0.254</td>
+<td>Зарезервировано</td>
+<td></td>
+</tr>
+<tr>
+<td>10.128.1.0/24</td>
+<td>Управление</td>
+<td>2</td>
+</tr>
+<tr>
+<td>10.128.1.1</td>
+<td>Шлюз</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="выполнение-лабораторной-работы-5">Выполнение лабораторной
+работы</h2>
+<table style="width:100%;">
+<caption>Таблица портов</caption>
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 12%" />
+<col style="width: 20%" />
+<col style="width: 12%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th>Устройство</th>
+<th>Порт</th>
+<th>Примечание</th>
+<th>Access VLAN</th>
+<th>Trunk VLAN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>msk-donskaya-dmbelicheva-gw-1</td>
+<td>f0/1</td>
+<td>UpLink</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>f0/0</td>
+<td>msk-donskaya-sw-1</td>
+<td></td>
+<td>2, 3, 101, 102, 103, 104</td>
+</tr>
+<tr>
+<td>msk-donskaya-dmbelicheva-sw-1</td>
+<td>f0/24</td>
+<td>msk-donskaya-gw-1</td>
+<td></td>
+<td>2, 3, 101, 102, 103, 104</td>
+</tr>
+<tr>
+<td></td>
+<td>g0/1</td>
+<td>msk-donskaya-sw-2</td>
+<td></td>
+<td>2, 3</td>
+</tr>
+<tr>
+<td></td>
+<td>g0/2</td>
+<td>msk-donskaya-sw-4</td>
+<td></td>
+<td>2, 101, 102, 103, 104</td>
+</tr>
+</tbody>
+</table>
+<h2 id="выполнение-лабораторной-работы-6">Выполнение лабораторной
+работы</h2>
+<table>
+<caption>Регламент выделения ip-адресов (для сети класса C)</caption>
+<thead>
+<tr>
+<th>IP-адреса</th>
+<th>Назначение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Шлюз</td>
+</tr>
+<tr>
+<td>2–19</td>
+<td>Сетевое оборудование</td>
+</tr>
+<tr>
+<td>20–29</td>
+<td>Серверы</td>
+</tr>
+<tr>
+<td>30–199</td>
+<td>Компьютеры, DHCP</td>
+</tr>
+<tr>
+<td>200–219</td>
+<td>Компьютеры, Static</td>
+</tr>
+<tr>
+<td>220–229</td>
+<td>Принтеры</td>
+</tr>
+<tr>
+<td>230–254</td>
+<td>Резерв</td>
+</tr>
+</tbody>
+</table>
+<h2 id="выполнение-лабораторной-работы-7">Выполнение лабораторной
+работы</h2>
+<figure id="fig:004">
+<img src="image/" style="width:70.0%"
+alt="Схема маршрутизации сети (Layer 3)" />
+<figcaption aria-hidden="true">Схема маршрутизации сети (Layer
+3)</figcaption>
+</figure>
+<h2 id="выполнение-лабораторной-работы-8">Выполнение лабораторной
+работы</h2>
+<figure id="fig:005">
+<img src="image/" style="width:70.0%"
+alt="Схема маршрутизации сети (Layer 3)" />
+<figcaption aria-hidden="true">Схема маршрутизации сети (Layer
+3)</figcaption>
+</figure>
+<h2 id="выполнение-лабораторной-работы-9">Выполнение лабораторной
+работы</h2>
+<table>
+<caption>Таблица IP. Сеть 172.16.0.0/12</caption>
+<thead>
+<tr>
+<th>IP-адреса</th>
+<th>Примечание</th>
+<th>VLAN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>172.16.0.0/12</td>
+<td>Вся сеть</td>
+<td></td>
+</tr>
+<tr>
+<td>172.16.0.0/24</td>
+<td>Серверная ферма</td>
+<td>3</td>
+</tr>
+<tr>
+<td>172.16.0.1</td>
+<td>Шлюз</td>
+<td></td>
+</tr>
+<tr>
+<td>172.16.0.2</td>
+<td>Web</td>
+<td></td>
+</tr>
+<tr>
+<td>172.16.0.3</td>
+<td>File</td>
+<td></td>
+</tr>
+<tr>
+<td>172.16.0.4</td>
+<td>Mail</td>
+<td></td>
+</tr>
+<tr>
+<td>172.16.0.5</td>
+<td>Dns</td>
+<td></td>
+</tr>
+<tr>
+<td>172.16.0.6-172.16.0.254</td>
+<td>Зарезервировано</td>
+<td></td>
+</tr>
+<tr>
+<td>172.16.1.0/24</td>
+<td>Управление</td>
+<td>2</td>
+</tr>
+<tr>
+<td>172.16.1.1</td>
+<td>Шлюз</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="выполнение-лабораторной-работы-10">Выполнение лабораторной
+работы</h2>
+<table>
+<caption>Таблица IP. Сеть 192.168.0.0/16</caption>
+<thead>
+<tr>
+<th>IP-адреса</th>
+<th>Примечание</th>
+<th>VLAN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>192.168.0.0/16</td>
+<td>Вся сеть</td>
+<td></td>
+</tr>
+<tr>
+<td>192.168.0.0/24</td>
+<td>Серверная ферма</td>
+<td>3</td>
+</tr>
+<tr>
+<td>192.168.0.1</td>
+<td>Шлюз</td>
+<td></td>
+</tr>
+<tr>
+<td>192.168.0.2</td>
+<td>Web</td>
+<td></td>
+</tr>
+<tr>
+<td>192.168.0.3</td>
+<td>File</td>
+<td></td>
+</tr>
+<tr>
+<td>192.168.0.4</td>
+<td>Mail</td>
+<td></td>
+</tr>
+<tr>
+<td>192.168.0.5</td>
+<td>Dns</td>
+<td></td>
+</tr>
+<tr>
+<td>192.168.0.6-192.168.0.254</td>
+<td>Зарезервировано</td>
+<td></td>
+</tr>
+<tr>
+<td>192.168.1.0/24</td>
+<td>Управление</td>
+<td>2</td>
+</tr>
+<tr>
+<td>192.168.1.1</td>
+<td>Шлюз</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="выводы">Выводы</h2>
+<p>В процессе выполнения лабораторной работы я познакомилась с
+принципами планирования локальной сети организации.</p>
