@@ -1,0 +1,370 @@
+\section{Информация}\label{ux438ux43dux444ux43eux440ux43cux430ux446ux438ux44f}
+
+\begin{frame}{Докладчик}
+\phantomsection\label{ux434ux43eux43aux43bux430ux434ux447ux438ux43a}
+\begin{columns}[c]
+\begin{column}{0.7\linewidth}
+\begin{itemize}
+\tightlist
+\item
+  Замбалова Дина Владимировна
+\item
+  студентка
+\item
+  Российский университет дружбы народов
+\item
+  \href{mailto:1032216453@pfur.ru}{1132226536@pfur.ru}
+\item
+  \url{https://github.com/dvzambalova}
+\end{itemize}
+\end{column}
+
+\begin{column}{0.25\linewidth}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Цель работы}
+\phantomsection\label{ux446ux435ux43bux44c-ux440ux430ux431ux43eux442ux44b}
+Получить основные навыки по настройке VLAN на коммутаторах сети.
+\end{frame}
+
+\begin{frame}{Задание}
+\phantomsection\label{ux437ux430ux434ux430ux43dux438ux435}
+\begin{enumerate}
+\item
+  На коммутаторах сети настроить Trunk-порты на соответствующих
+  интерфейсах, связывающих коммутаторы между собой.
+\item
+  Коммутатор msk-donskaya-sw-1 настроить как VTP-сервер и прописать на
+  нём номера и названия VLAN.
+\item
+  Коммутаторы msk-donskaya-sw-2 --- msk-donskaya-sw-4,
+  mskpavlovskaya-sw-1 настроить как VTP-клиенты, на интерфейсах указать
+  принадлежность к соответствующему VLAN.
+\item
+  На серверах прописать IP-адреса.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Задание}
+\phantomsection\label{ux437ux430ux434ux430ux43dux438ux435-1}
+\begin{enumerate}
+\setcounter{enumi}{4}
+\item
+  На оконечных устройствах указать соответствующий адрес шлюза и
+  прописать статические IP-адреса из диапазона соответствующей сети,
+  следуя регламенту выделения ip-адресов.
+\item
+  Проверить доступность устройств, принадлежащих одному VLAN, и
+  недоступность устройств, принадлежащих разным VLAN.
+\item
+  При выполнении работы необходимо учитывать соглашение об именовании.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Выполнение лабораторной работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{image/1.png}
+\caption{Настройка Trunk-порта на
+msk-donskaya-dvzambalova-sw-1}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение лабораторной работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-1}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{image/2.png}
+\caption{Настройка Trunk-порта на
+msk-donskaya-dvzambalova-sw-2}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение лабораторной работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-2}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{image/3.png}
+\caption{Настройка Trunk-порта на
+msk-donskaya-dvzambalova-sw-3}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение лабораторной работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-3}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{image/4.png}
+\caption{Настройка Trunk-порта на
+msk-donskaya-dvzambalova-sw-4}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение лабораторной работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-4}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{image/5.png}
+\caption{Настройка Trunk-порта на
+msk-donskaya-dvzambalova-sw-1}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение лабораторной работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-5}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{image/6.png}
+\caption{Настройка Trunk-порта на
+msk-pavlovskaya-dvzambalova-sw-1}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение лабораторной работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-6}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{image/7.png}
+\caption{Задания VLAN}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение лабораторной работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-7}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{image/8.png}
+\caption{Команда show vlan}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение лабораторной работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-8}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{image/9.png}
+\caption{Конфигурация VTP msk-donskaya-dvzambalova-sw-1}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение лабораторной работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-9}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{image/10.png}
+\caption{Конфигурация VTP msk-donskaya-dvzambalova-sw-2}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение лабораторной работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-10}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{image/11.png}
+\caption{Конфигурация VTP msk-donskaya-dvzambalova-sw-3}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение лабораторной работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-11}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{image/12.png}
+\caption{Конфигурация VTP msk-donskaya-dvzambalova-sw-4. Проверка
+отображения VLAN}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение лабораторной работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-12}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{image/13.png}
+\caption{Конфигурация VTP
+msk-pavlovskaya-dvzambalova-sw-1}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение лабораторной работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-13}
+Выполним эту конфигурацию в соответствии с таблицей:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.3148}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1204}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2037}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1204}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2407}}@{}}
+\caption{Таблица портов}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Устройство
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Порт
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Примечание
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Access VLAN
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Trunk VLAN
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Устройство
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Порт
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Примечание
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Access VLAN
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Trunk VLAN
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+msk-donskaya-dmbelicheva-gw-1 & f0/1 & UpLink & & \\
+& f0/0 & msk-donskaya-sw-1 & & 2, 3, 101, 102, 103, 104 \\
+msk-donskaya-dmbelicheva-sw-1 & f0/24 & msk-donskaya-gw-1 & & 2, 3, 101,
+102, 103, 104 \\
+& g0/1 & msk-donskaya-sw-2 & & 2, 3 \\
+& g0/2 & msk-donskaya-sw-4 & & 2, 101, 102, 103, 104 \\
+\bottomrule\noalign{}
+\end{longtable}
+\end{frame}
+
+\begin{frame}{Выполнение лабораторной работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-14}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{image/14.png}
+\caption{Конфигурация диапазона портов и указание принадлежности к VLAN
+для msk-donskaya-dvzambalova-sw-4}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение лабораторной работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-15}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{image/15.png}
+\caption{Конфигурация диапазона портов и указание принадлежности к VLAN
+для msk-pavlovskaya-dvzambalova-sw-1}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение лабораторной работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-16}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{image/16.png}
+\caption{Конфигурация диапазона портов и указание принадлежности к VLAN
+для msk-donskaya-dvzambalova-sw-2}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение лабораторной работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-17}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{image/17.png}
+\caption{Конфигурация диапазона портов и указание принадлежности к VLAN
+для msk-donskaya-dvzambalova-sw-3}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение лабораторной работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-18}
+Задавать IP-адреса будем в соответствии с таблицей:
+
+\begin{longtable}[]{@{}lll@{}}
+\caption{Таблица IP. Сеть 10.128.0.0/16}\tabularnewline
+\toprule\noalign{}
+IP-адреса & Примечание & VLAN \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+IP-адреса & Примечание & VLAN \\
+\midrule\noalign{}
+\endhead
+10.128.0.0/16 & Вся сеть & \\
+10.128.0.0/24 & Серверная ферма & 3 \\
+10.128.0.1 & Шлюз & \\
+10.128.0.2 & Web & \\
+10.128.0.3 & File & \\
+\bottomrule\noalign{}
+\end{longtable}
+\end{frame}
+
+\begin{frame}{Выполнение лабораторной работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-19}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{image/18.png}
+\caption{Задание IP-адреса шлюзу}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение лабораторной работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-20}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\linewidth,height=\textheight,keepaspectratio]{image/19.png}
+\caption{Задание IP-адреса}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение лабораторной работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-21}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{image/20.png}
+\caption{ipconfig}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение лабораторной работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-22}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\linewidth,height=\textheight,keepaspectratio]{image/21.png}
+\caption{Пингование}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение лабораторной работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-23}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\linewidth,height=\textheight,keepaspectratio]{image/22.png}
+\caption{Режим симуляции}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение лабораторной работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-24}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\linewidth,height=\textheight,keepaspectratio]{image/23.png}
+\caption{Информация о PDU}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение лабораторной работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-25}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\linewidth,height=\textheight,keepaspectratio]{image/24.png}
+\caption{Режим симуляции}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выводы}
+\phantomsection\label{ux432ux44bux432ux43eux434ux44b}
+В процессе выполнения данной лабораторной работы я получила основные
+навыки по настройке VLAN на коммутаторах сети.
+\end{frame}
