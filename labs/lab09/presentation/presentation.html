@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru-RU" xml:lang="ru-RU">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Замбалова Дина Владимировна" />
+  <title>Лабораторная работа №9</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+  
+  
+  
+  
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Лабораторная работа №9</h1>
+<p class="subtitle">Использование протокола STP. Агрегирование
+каналов</p>
+<p class="author">Замбалова Дина Владимировна</p>
+</header>
+<h1 id="информация">Информация</h1>
+<h2 id="докладчик">Докладчик</h2>
+<div class="columns" data-align="center">
+<div class="column" style="width:70%;">
+<ul>
+<li>Замбалова Дина Владимировна</li>
+<li>студентка</li>
+<li>Российский университет дружбы народов</li>
+<li><a href="mailto:1132226536@pfur.ru">1132226536@pfur.ru</a></li>
+<li><a href="https://github.com/dvzambalova"
+class="uri">https://github.com/dvzambalova</a></li>
+</ul>
+</div><div class="column" style="width:25%;">
+
+</div>
+</div>
+<h2 id="цель-работы">Цель работы</h2>
+<p>Изучить возможности протокола STP и его модификаций по обеспечению
+отказоустойчивости сети, агрегированию интерфейсов и перераспределению
+нагрузки между ними.</p>
+<h2 id="задание">Задание</h2>
+<ol type="1">
+<li><p>Сформировать резервное соединение между коммутаторами
+msk-donskayasw-1 и msk-donskaya-sw-3.</p></li>
+<li><p>Настроить балансировку нагрузки между резервными
+соединениями.</p></li>
+<li><p>Настроить режим Portfast на тех интерфейсах коммутаторов, к
+которым подключены серверы.</p></li>
+<li><p>Изучить отказоустойчивость резервного соединения.</p></li>
+<li><p>Сформировать и настроить агрегированное соединение интерфейсов
+Fa0/20 – Fa0/23 между коммутаторами msk-donskaya-sw-1 и
+msk-donskaya-sw-4.</p></li>
+<li><p>При выполнении работы необходимо учитывать соглашение об
+именовании.</p></li>
+</ol>
+<h2 id="выполнение-лабораторной-работы">Выполнение лабораторной
+работы</h2>
+<figure id="fig:001">
+<img src="image/1.png" style="width:70.0%"
+alt="Логическая схема локальной сети с резервным соединением" />
+<figcaption aria-hidden="true">Логическая схема локальной сети с
+резервным соединением</figcaption>
+</figure>
+<h2 id="выполнение-лабораторной-работы-1">Выполнение лабораторной
+работы</h2>
+<figure id="fig:002">
+<img src="image/2.png" style="width:70.0%"
+alt="Настройка trunk-порта на интерфейсе Gig0/2 коммутатора msk-donskaya-sw-3" />
+<figcaption aria-hidden="true">Настройка trunk-порта на интерфейсе
+Gig0/2 коммутатора msk-donskaya-sw-3</figcaption>
+</figure>
+<h2 id="выполнение-лабораторной-работы-2">Выполнение лабораторной
+работы</h2>
+<figure id="fig:005">
+<img src="image/5.png" style="width:50.0%"
+alt="Пингование сервера mail и web" />
+<figcaption aria-hidden="true">Пингование сервера mail и
+web</figcaption>
+</figure>
+<h2 id="выполнение-лабораторной-работы-3">Выполнение лабораторной
+работы</h2>
+<figure id="fig:006">
+<img src="image/6.png" style="width:70.0%"
+alt="Режим симуляции движения пакетов ICMP" />
+<figcaption aria-hidden="true">Режим симуляции движения пакетов
+ICMP</figcaption>
+</figure>
+<h2 id="выполнение-лабораторной-работы-4">Выполнение лабораторной
+работы</h2>
+<figure id="fig:007">
+<img src="image/7.png" style="width:70.0%"
+alt="Режим симуляции движения пакетов ICMP" />
+<figcaption aria-hidden="true">Режим симуляции движения пакетов
+ICMP</figcaption>
+</figure>
+<h2 id="выполнение-лабораторной-работы-5">Выполнение лабораторной
+работы</h2>
+<figure id="fig:008">
+<img src="image/8.png" style="width:70.0%"
+alt="Просмотр состояния протокола STP для vlan 3" />
+<figcaption aria-hidden="true">Просмотр состояния протокола STP для vlan
+3</figcaption>
+</figure>
+<h2 id="выполнение-лабораторной-работы-6">Выполнение лабораторной
+работы</h2>
+<figure id="fig:009">
+<img src="image/9.png" style="width:60.0%"
+alt="Настройка коммутатора msk-donskaya-sw-1 корневым" />
+<figcaption aria-hidden="true">Настройка коммутатора msk-donskaya-sw-1
+корневым</figcaption>
+</figure>
+<h2 id="выполнение-лабораторной-работы-7">Выполнение лабораторной
+работы</h2>
+<figure id="fig:010">
+<img src="image/10.png" style="width:70.0%"
+alt="Режим симуляции движения пакетов ICMP к серверу web" />
+<figcaption aria-hidden="true">Режим симуляции движения пакетов ICMP к
+серверу web</figcaption>
+</figure>
+<h2 id="выполнение-лабораторной-работы-8">Выполнение лабораторной
+работы</h2>
+<figure id="fig:011">
+<img src="image/11.png" style="width:70.0%"
+alt="Режим симуляции движения пакетов ICMP к серверу mail" />
+<figcaption aria-hidden="true">Режим симуляции движения пакетов ICMP к
+серверу mail</figcaption>
+</figure>
+<h2 id="выполнение-лабораторной-работы-9">Выполнение лабораторной
+работы</h2>
+<figure id="fig:012">
+<img src="image/12.png" style="width:70.0%"
+alt="Настройка режима Portfast" />
+<figcaption aria-hidden="true">Настройка режима Portfast</figcaption>
+</figure>
+<h2 id="выполнение-лабораторной-работы-10">Выполнение лабораторной
+работы</h2>
+<figure id="fig:014">
+<img src="image/14.png" style="width:60.0%"
+alt="Пингование mail.donskaya.rudn.ru" />
+<figcaption aria-hidden="true">Пингование
+mail.donskaya.rudn.ru</figcaption>
+</figure>
+<h2 id="выполнение-лабораторной-работы-11">Выполнение лабораторной
+работы</h2>
+<figure id="fig:015">
+<img src="image/15.png" style="width:70.0%" alt="Разрыв соединения" />
+<figcaption aria-hidden="true">Разрыв соединения</figcaption>
+</figure>
+<h2 id="выполнение-лабораторной-работы-12">Выполнение лабораторной
+работы</h2>
+<figure id="fig:016">
+<img src="image/16.png" style="width:70.0%"
+alt="Время восстановления соединения" />
+<figcaption aria-hidden="true">Время восстановления
+соединения</figcaption>
+</figure>
+<h2 id="выполнение-лабораторной-работы-13">Выполнение лабораторной
+работы</h2>
+<figure id="fig:017">
+<img src="image/17.png" style="width:70.0%"
+alt="Режим работы по протоколу Rapid PVST+" />
+<figcaption aria-hidden="true">Режим работы по протоколу Rapid
+PVST+</figcaption>
+</figure>
+<h2 id="выполнение-лабораторной-работы-14">Выполнение лабораторной
+работы</h2>
+<figure id="fig:022">
+<img src="image/22.png" style="width:70.0%"
+alt="Пингование mail.donskaya.rudn.ru. Разрыв соединения. Время восстановления соединения" />
+<figcaption aria-hidden="true">Пингование mail.donskaya.rudn.ru. Разрыв
+соединения. Время восстановления соединения</figcaption>
+</figure>
+<h2 id="выполнение-лабораторной-работы-15">Выполнение лабораторной
+работы</h2>
+<figure id="fig:025">
+<img src="image/25.png" style="width:70.0%"
+alt="Логическая схема локальной сети с агрегированным соединением" />
+<figcaption aria-hidden="true">Логическая схема локальной сети с
+агрегированным соединением</figcaption>
+</figure>
+<h2 id="выполнение-лабораторной-работы-16">Выполнение лабораторной
+работы</h2>
+<figure id="fig:026">
+<img src="image/26.png" style="width:70.0%"
+alt="Настройка агрегирования каналов на msk-donskaya-dvzambalova-sw-1" />
+<figcaption aria-hidden="true">Настройка агрегирования каналов на
+msk-donskaya-dvzambalova-sw-1</figcaption>
+</figure>
+<h2 id="выполнение-лабораторной-работы-17">Выполнение лабораторной
+работы</h2>
+<figure id="fig:027">
+<img src="image/27.png" style="width:30.0%"
+alt="Настройка агрегирования каналов на msk-donskaya-dvzambalova-sw-1" />
+<figcaption aria-hidden="true">Настройка агрегирования каналов на
+msk-donskaya-dvzambalova-sw-1</figcaption>
+</figure>
+<h2 id="выводы">Выводы</h2>
+<p>В результате выполнения лабораторной работы я изучила возможности
+протокола STP и его модификаций по обеспечению отказоустойчивости сети,
+агрегированию интерфейсов и перераспределению нагрузки между ними.</p>
+</body>
+</html>
